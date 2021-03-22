@@ -16,7 +16,6 @@ class Matrix:
         return len(self.matrix), len(self.matrix[0])
 
     def __str__(self):
-        # string - итоговая матрица
         string = ''
         k = 0
         for matrix in self.matrix:
