@@ -146,4 +146,49 @@ class SquareMatrix(Matrix):
             return b * b
 
 
+# TESTS:
+# 1.
+m = SquareMatrix([[1, 1, 0, 0, 0, 0],
+                  [0, 1, 1, 0, 0, 0],
+                  [0, 0, 1, 1, 0, 0],
+                  [0, 0, 0, 1, 1, 0],
+                  [0, 0, 0, 0, 1, 1],
+                  [0, 0, 0, 0, 0, 1]]
+                 )
+print(m)
+print('----------')
+print(m ** 1)
+print('----------')
+print(m ** 2)
+print('----------')
+print(m ** 3)
+print('----------')
+print(m ** 4)
+print('----------')
+print(m ** 5)
+print()
+print()
+# 2.
+m = Matrix([[1, 1, 1], [0, 2, 0], [0, 0, 4]])
+print(m.solve([1, 1, 1]))
+print()
+print()
+
+# 3.
+mid = Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
+m1 = Matrix([[3, 2], [-10, 0], [14, 5]])
+m2 = Matrix([[5, 2, 10], [-0.5, -0.25, 18], [-22, -2.5, -0.125]])
+print(5 * m2)
+print(m2 * (120 * mid * m1))
+print()
+print()
+
+# 4.
+m = Matrix([[10, 10], [0, 0], [1, 1]])
+print(m)
+print(Matrix.transposed(m))
+print(m)
+print()
+print()
+
 exec(stdin.read())
